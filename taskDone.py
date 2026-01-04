@@ -133,4 +133,4 @@ folium.PolyLine(location_data[['Latitude (°)', 'Longitude (°)']], color='red')
 
 st.write("Reitti kartalla:")
 
-st_map = st_folium(map, width=700, height=500)
+st_folium(map, width=700, height=500)
