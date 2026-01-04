@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 from scipy.fft import fft, fftfreq
 
 
-locationUrl = 'https://raw.githubusercontent.com/PhysicsPython/finalPhysicsTask/main/Location.csv'
-accelerationUrl = 'https://raw.githubusercontent.com/PhysicsPython/finalPhysicsTask/main/Linear%20Acceleration.csv'
+locationUrl = 'https://github.com/N1ppexd/finalPhysicsTask/blob/main/Location.csv'
+accelerationUrl = 'https://github.com/N1ppexd/finalPhysicsTask/blob/main/Linear%20Acceleration.csv'
 acceleration_data = pd.read_csv(accelerationUrl)
 location_data = pd.read_csv(locationUrl)
 
