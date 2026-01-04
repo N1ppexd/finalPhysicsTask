@@ -1,15 +1,16 @@
 import streamlit as st
+import folium
 from streamlit_folium import st_folium
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.fft import fft, fftfreq
-import folium
 
 
-acceleration_data = pd.read_csv('Linear Acceleration.csv')
-location_data = pd.read_csv('Location.csv')
+locationUrl = 'https://raw.githubusercontent.com/PhysicsPython/finalPhysicsTask/main/Location.csv'
+accelerationUrl = 'https://raw.githubusercontent.com/PhysicsPython/finalPhysicsTask/main/Linear%20Acceleration.csv'
+acceleration_data = pd.read_csv(accelerationUrl)
+location_data = pd.read_csv(locationUrl)
 
 from scipy.signal import butter, filtfilt
 
